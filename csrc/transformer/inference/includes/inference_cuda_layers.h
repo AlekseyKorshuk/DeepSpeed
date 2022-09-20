@@ -21,14 +21,14 @@ Copyright 2022 The Microsoft DeepSpeed Team
 #include <cassert>
 #include <iostream>
 
-#define MAX_OUT_TOKES 8192
-#define MAX_WARP_NUM 32
-#define WARP_SIZE 32
+#define MAX_OUT_TOKES 32768
+#define MAX_WARP_NUM 128
+#define WARP_SIZE 128
 
-#define MAX_THREADS 1024
+#define MAX_THREADS 4096
 #define SMs 80
 
-#define MAX_REGISTERS 256
+#define MAX_REGISTERS 1024
 template <typename T>
 void launch_attn_softmax_v2(T* vals,
                             T* mask,
