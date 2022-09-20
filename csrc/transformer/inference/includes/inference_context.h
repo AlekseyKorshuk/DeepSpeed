@@ -15,7 +15,7 @@ Copyright 2022 The Microsoft DeepSpeed Team
 #define MEGABYTE (1024 * 1024)
 #define GIGABYTE (1024 * 1024 * 1024)
 
-#define WARP_SIZE 64
+#define WARP_SIZE 32
 
 #define CUDA_CHECK(callstr)                                                                    \
     {                                                                                          \
