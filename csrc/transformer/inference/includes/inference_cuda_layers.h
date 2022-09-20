@@ -28,7 +28,7 @@ Copyright 2022 The Microsoft DeepSpeed Team
 #define MAX_THREADS 1024
 #define SMs 80
 
-#define MAX_REGISTERS 512
+#define MAX_REGISTERS 2048
 template <typename T>
 void launch_attn_softmax_v2(T* vals,
                             T* mask,
