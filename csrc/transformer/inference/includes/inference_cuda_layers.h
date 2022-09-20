@@ -22,10 +22,10 @@ Copyright 2022 The Microsoft DeepSpeed Team
 #include <iostream>
 
 #define MAX_OUT_TOKES 32768
-#define MAX_WARP_NUM 64
-#define WARP_SIZE 64
+#define MAX_WARP_NUM 32
+#define WARP_SIZE 32
 
-#define MAX_THREADS 1024
+#define MAX_THREADS 4096
 #define SMs 80
 
 #define MAX_REGISTERS 256
